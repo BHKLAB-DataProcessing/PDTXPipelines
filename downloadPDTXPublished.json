@@ -1,12 +1,12 @@
 {
     "pipeline": {
-      "name": "downloadPDTXPublished"
+      "name": "downloadPDTXPublishedNew"
     },
     "transform": {
       "image": "bhklab/pharmacogx2.0:v3",
       "cmd": [
         "Rscript", 
-        "/pfs/downloadPDTXPublished/download.R"]
+        "/pfs/downloadPDTXPublishedNew/download.R"]
       },   
     "resource_requests": {
       "memory": "100M"
