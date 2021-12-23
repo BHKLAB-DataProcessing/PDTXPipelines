@@ -5,9 +5,9 @@
     "transform": {
       "image": "bhklab/pharmacogx2.0:v3",
       "cmd": [
-        "/bin/bash", "/pfs/downloadPDTXPublished/download.sh"]
-      },
-    
+        "Rscript", 
+        "/pfs/downloadPDTXPublished/download.R"]
+      },   
     "resource_requests": {
       "memory": "100M"
     },
