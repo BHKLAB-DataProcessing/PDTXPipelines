@@ -23,7 +23,7 @@
         },
         {
             "pfs": {
-              "repo": "downloadPDTXPublished",
+              "repo": "downloadPDTXPublishedNew",
               "glob": "/"
             }
         }
