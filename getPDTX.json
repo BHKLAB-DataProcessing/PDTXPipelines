@@ -1,0 +1,44 @@
+{
+    "pipeline": {
+      "name": "getPDTX"
+    },
+    "transform": {
+      "image": "bhklab/pharmacogx2.0:v4",
+      "cmd": [
+            "Rscript", 
+            "/pfs/getPDTX/getPDTX.R"
+        ]
+    },   
+    "resource_requests": {
+      "memory": "8G"
+    },
+    "input": {
+      "cross": [
+        {
+          "git": {
+            "url": "https://github.com/BHKLAB-Pachyderm/getPDTX.git",
+            "name": "",
+            "branch": "main"
+          }
+        },
+        {
+            "pfs": {
+              "repo": "normalizeAndComputePDTXSens",
+              "glob": "/"
+            }
+        },
+        {
+            "pfs": {
+              "repo": "downloadPDTXBreastData",
+              "glob": "/"
+            }
+        },
+        {
+            "pfs": {
+              "repo": "downAnnotations",
+              "glob": "/"
+            }
+        }
+      ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "pipeline": {
+      "name": "normalizeAndComputePDTXSens"
+    },
+    "transform": {
+      "image": "bhklab/pharmacogx2.0:v3",
+      "cmd": [
+            "Rscript", 
+            "/pfs/normalizeAndComputePDTXSens/sensitivity.R"
+        ]
+    },   
+    "resource_requests": {
+      "memory": "8G"
+    },
+    "input": {
+      "cross": [
+        {
+          "git": {
+            "url": "https://github.com/BHKLAB-Pachyderm/normalizeAndComputePDTXSens.git",
+            "name": "",
+            "branch": "main"
+          }
+        },
+        {
+            "pfs": {
+              "repo": "downloadPDTXPublished",
+              "glob": "/"
+            }
+        }
+      ]
+    }
+}
