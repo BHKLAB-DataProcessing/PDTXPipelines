@@ -3,10 +3,10 @@
       "name": "downloadPDTXPublishedNew"
     },
     "transform": {
-      "image": "bhklab/pharmacogx2.0:v3",
+      "image": "bhklab/pharmacogx:v5",
       "cmd": [
-        "Rscript", 
-        "/pfs/downloadPDTXPublishedNew/download.R"]
+        "/bin/bash", 
+        "/pfs/downloadPDTXPublishedNew/download.sh"]
       },   
     "resource_requests": {
       "memory": "100M"
