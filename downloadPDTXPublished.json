@@ -1,12 +1,12 @@
 {
     "pipeline": {
-      "name": "downloadPDTXPublishedNew"
+      "name": "downloadPDTXPublished"
     },
     "transform": {
       "image": "bhklab/pharmacogx:v5",
       "cmd": [
         "/bin/bash", 
-        "/pfs/downloadPDTXPublishedNew/download.sh"]
+        "/pfs/downloadPDTXPublished/download.sh"]
       },   
     "resource_requests": {
       "memory": "100M"
@@ -15,9 +15,9 @@
       "cross": [
         {
           "git": {
-            "url": "https://github.com/BHKLAB-Pachyderm/downloadPDTXPublishedNew.git",
+            "url": "https://github.com/BHKLAB-Pachyderm/downloadPDTXPublished.git",
             "name": "",
-            "branch": "main"
+            "branch": "master"
           }
         }
       ]
