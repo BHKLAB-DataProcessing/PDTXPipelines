@@ -3,7 +3,7 @@
       "name": "normalizeAndComputePDTXSens"
     },
     "transform": {
-      "image": "bhklab/pharmacogx2.0:v3",
+      "image": "bhklab/pharmacogx2.0:v4",
       "cmd": [
             "Rscript", 
             "/pfs/normalizeAndComputePDTXSens/sensitivity.R"
